@@ -127,12 +127,15 @@
 
 //conditional statements
 
-const number = 20;
+// const number = 20;
 
-if (number == 10) {
-  console.log('number is 10');
-} else if (number > 10) {
-  console.log('number is greater than 10');
-} else {
-  console.log('number is less than 10');
-}
+// if (number == 10) {
+//   console.log('number is 10');
+// } else if (number > 10) {
+//   console.log('number is greater than 10');
+// } else {
+//   console.log('number is less than 10');
+// }
+
+const x = 4;
+const y = 10;
