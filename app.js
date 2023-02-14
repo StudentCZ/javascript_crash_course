@@ -51,9 +51,19 @@ const person = {
   },
 };
 
-console.log(
-  person.firstName,
-  person.lastName,
-  person.hobbies[2],
-  person.address.street
-);
+// console.log(
+//   person.firstName,
+//   person.lastName,
+//   person.hobbies[2],
+//   person.address.street
+// );
+
+//destructuring
+
+const {
+  firstName,
+  lastName,
+  address: { state },
+} = person;
+
+console.log(state);
