@@ -1,11 +1,11 @@
 //Data Types Primitive
 
-const name = 'John';
-const age = 30;
-const rating = 4.5;
-const isTrue = true;
-const x = null;
-const y = undefined;
+// const name = 'John';
+// const age = 30;
+// const rating = 4.5;
+// const isTrue = true;
+// const x = null;
+// const y = undefined;
 
 // Concatenation old way
 // console.log('My name is ' + name + ' and I am ' + age);
@@ -15,7 +15,7 @@ const y = undefined;
 
 //String property and methods
 
-const string = 'Hello World';
+// const string = 'Hello World';
 
 // console.log(string.length);
 // console.log(string.toUpperCase());
@@ -25,31 +25,31 @@ const string = 'Hello World';
 
 //Arrays
 
-const numbers = new Array(1, 2, 3, 4, 5);
+// const numbers = new Array(1, 2, 3, 4, 5);
 
-const fruits = ['apples', 'oranges', 'bananas', 'pears'];
+// const fruits = ['apples', 'oranges', 'bananas', 'pears'];
 
 // console.log(fruits[1]);
 
-fruits.push('mangos');
-fruits.unshift('strawberries');
-fruits.pop();
+// fruits.push('mangos');
+// fruits.unshift('strawberries');
+// fruits.pop();
 
 // console.log(Array.isArray(fruits)); //return true
 
 //Object Literals
 
-const person = {
-  firstName: 'Sam',
-  lastName: 'Wise',
-  age: 20,
-  hobbies: ['music', 'basketball', 'singing', 'movies'],
-  address: {
-    street: 'Big Town',
-    city: 'Cleveland',
-    state: 'Ohio',
-  },
-};
+// const person = {
+//   firstName: 'Sam',
+//   lastName: 'Wise',
+//   age: 20,
+//   hobbies: ['music', 'basketball', 'singing', 'movies'],
+//   address: {
+//     street: 'Big Town',
+//     city: 'Cleveland',
+//     state: 'Ohio',
+//   },
+// };
 
 // console.log(
 //   person.firstName,
@@ -60,35 +60,35 @@ const person = {
 
 //destructuring
 
-const {
-  firstName,
-  lastName,
-  address: { state },
-} = person;
+// const {
+//   firstName,
+//   lastName,
+//   address: { state },
+// } = person;
 
-person.email = 'samwise@gmail.com';
+// person.email = 'samwise@gmail.com';
 
 //Array of Objects
 
-const todos = [
-  {
-    id: 1,
-    text: 'Do my homework',
-    isCompleted: true,
-  },
-  {
-    id: 2,
-    text: 'Go buy groceries',
-    isCompleted: true,
-  },
-  {
-    id: 3,
-    text: 'fill out job application',
-    isCompleted: false,
-  },
-];
+// const todos = [
+//   {
+//     id: 1,
+//     text: 'Do my homework',
+//     isCompleted: true,
+//   },
+//   {
+//     id: 2,
+//     text: 'Go buy groceries',
+//     isCompleted: true,
+//   },
+//   {
+//     id: 3,
+//     text: 'fill out job application',
+//     isCompleted: false,
+//   },
+// ];
 
-const todosJSON = JSON.stringify(todos);
+// const todosJSON = JSON.stringify(todos);
 
 //for of loops
 
@@ -130,7 +130,9 @@ const todosJSON = JSON.stringify(todos);
 const number = 20;
 
 if (number == 10) {
-  console.log(true);
+  console.log('number is 10');
+} else if (number > 10) {
+  console.log('number is greater than 10');
 } else {
-  console.log(false);
+  console.log('number is less than 10');
 }
