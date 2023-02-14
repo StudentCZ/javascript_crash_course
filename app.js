@@ -68,4 +68,22 @@ const {
 
 person.email = 'samwise@gmail.com';
 
-console.log(person);
+//Array of Objects
+
+const todos = [
+  {
+    id: 1,
+    text: 'Do my homework',
+    isCompleted: true,
+  },
+  {
+    id: 2,
+    text: 'Go buy groceries',
+    isCompleted: true,
+  },
+  {
+    id: 3,
+    text: 'fill out job application',
+    isCompleted: false,
+  },
+];
