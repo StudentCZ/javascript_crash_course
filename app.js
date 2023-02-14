@@ -18,3 +18,6 @@ console.log(`My name is ${name} and I am ${age}`);
 const string = 'Hello World';
 
 console.log(string.length);
+console.log(string.toUpperCase());
+console.log(string.substring(0, 5));
+console.log(string.substring(0, 5).toUpperCase());
