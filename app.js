@@ -35,7 +35,7 @@ fruits.push('mangos');
 fruits.unshift('strawberries');
 fruits.pop();
 
-console.log(Array.isArray(fruits)); //return true
+// console.log(Array.isArray(fruits)); //return true
 
 //Object Literals
 
@@ -92,13 +92,25 @@ const todosJSON = JSON.stringify(todos);
 
 //for of loops
 
-for (let todo of todos) {
-  console.log(todo.text);
-}
+// for (let todo of todos) {
+//   console.log(todo.text);
+// }
 
 //forEach, map, filter high order array methods
 
 //ES5 forEach
-todos.forEach(function (todo) {
-  console.log(todo.text);
+// todos.forEach(function (todo) {
+//   console.log(todo.text);
+// });
+
+//ES5 map
+// const todoText = todos.map(function (todo) {
+//   return todo.text;
+// });
+
+//ES5 filter
+const todoCompleted = todos.filter(function (todo) {
+  return todo.isCompleted === true;
 });
+
+console.log(todoCompleted);
