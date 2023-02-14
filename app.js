@@ -7,4 +7,5 @@ const isTrue = true;
 const x = null;
 const y = undefined;
 
-console.log(typeof name);
+// Concatenation
+console.log('My name is ' + name + ' and I am ' + age);
