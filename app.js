@@ -127,8 +127,10 @@ const todosJSON = JSON.stringify(todos);
 
 //conditional statements
 
-const number = 10;
+const number = 20;
 
 if (number == 10) {
   console.log(true);
+} else {
+  console.log(false);
 }
