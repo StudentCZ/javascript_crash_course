@@ -1,4 +1,4 @@
-//Data Types
+//Data Types Primitive
 
 const name = 'John';
 const age = 30;
