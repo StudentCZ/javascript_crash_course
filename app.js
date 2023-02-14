@@ -95,3 +95,10 @@ const todosJSON = JSON.stringify(todos);
 for (let todo of todos) {
   console.log(todo.text);
 }
+
+//forEach, map, filter high order array methods
+
+//ES5 forEach
+todos.forEach(function (todo) {
+  console.log(todo.text);
+});
