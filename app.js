@@ -36,3 +36,5 @@ fruits.unshift('strawberries');
 fruits.pop();
 
 console.log(Array.isArray(fruits)); //return true
+
+//Object Literals
