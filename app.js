@@ -114,13 +114,21 @@ const todosJSON = JSON.stringify(todos);
 // });
 
 //ES5 filter + map method chaining
-const todoCompleted = todos
-  .filter(function (todo) {
-    return todo.isCompleted === true;
-  })
-  .map(function (todo) {
-    return todo.text;
-  })
-  .join(', ');
+// const todoCompleted = todos
+//   .filter(function (todo) {
+//     return todo.isCompleted === true;
+//   })
+//   .map(function (todo) {
+//     return todo.text;
+//   })
+//   .join(', ');
 
-console.log(todoCompleted);
+// console.log(todoCompleted);
+
+//conditional statements
+
+const number = 10;
+
+if (number == 10) {
+  console.log(true);
+}
