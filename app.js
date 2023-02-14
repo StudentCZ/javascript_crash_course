@@ -12,3 +12,9 @@ console.log('My name is ' + name + ' and I am ' + age);
 
 //Concatenation new way Temperal Literals/Template String
 console.log(`My name is ${name} and I am ${age}`);
+
+//String property and methods
+
+const string = 'Hello World';
+
+console.log(string.length);
