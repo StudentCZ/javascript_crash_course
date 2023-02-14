@@ -109,8 +109,18 @@ const todosJSON = JSON.stringify(todos);
 // });
 
 //ES5 filter
-const todoCompleted = todos.filter(function (todo) {
-  return todo.isCompleted === true;
-});
+// const todoCompleted = todos.filter(function (todo) {
+//   return todo.isCompleted === true;
+// });
+
+//ES5 filter + map method chaining
+const todoCompleted = todos
+  .filter(function (todo) {
+    return todo.isCompleted === true;
+  })
+  .map(function (todo) {
+    return todo.text;
+  })
+  .join(', ');
 
 console.log(todoCompleted);
