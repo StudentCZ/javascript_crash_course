@@ -29,4 +29,10 @@ const numbers = new Array(1, 2, 3, 4, 5);
 
 const fruits = ['apples', 'oranges', 'bananas', 'pears'];
 
-console.log(fruits[1]);
+// console.log(fruits[1]);
+
+fruits.push('mangos');
+fruits.unshift('strawberries');
+fruits.pop();
+
+console.log(Array.isArray(fruits)); //return true
