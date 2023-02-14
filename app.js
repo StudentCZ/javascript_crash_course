@@ -87,3 +87,5 @@ const todos = [
     isCompleted: false,
   },
 ];
+
+const todosJSON = JSON.stringify(todos);
