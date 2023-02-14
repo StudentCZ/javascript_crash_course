@@ -89,3 +89,9 @@ const todos = [
 ];
 
 const todosJSON = JSON.stringify(todos);
+
+//for of loops
+
+for (let todo of todos) {
+  console.log(todo.text);
+}
