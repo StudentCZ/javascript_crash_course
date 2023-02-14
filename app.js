@@ -38,3 +38,15 @@ fruits.pop();
 console.log(Array.isArray(fruits)); //return true
 
 //Object Literals
+
+const person = {
+  firstName: 'Sam',
+  lastNameL: 'Wise',
+  age: 20,
+  hobbies: ['music', 'basketball', 'singing'],
+  address: {
+    street: 'Big Town',
+    city: 'Cleveland',
+    state: 'Ohio',
+  },
+};
