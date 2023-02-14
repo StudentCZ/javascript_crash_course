@@ -7,5 +7,8 @@ const isTrue = true;
 const x = null;
 const y = undefined;
 
-// Concatenation
+// Concatenation old way
 console.log('My name is ' + name + ' and I am ' + age);
+
+//Concatenation new way Temperal Literals/Template String
+console.log(`My name is ${name} and I am ${age}`);
