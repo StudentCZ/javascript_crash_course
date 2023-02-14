@@ -41,12 +41,19 @@ console.log(Array.isArray(fruits)); //return true
 
 const person = {
   firstName: 'Sam',
-  lastNameL: 'Wise',
+  lastName: 'Wise',
   age: 20,
-  hobbies: ['music', 'basketball', 'singing'],
+  hobbies: ['music', 'basketball', 'singing', 'movies'],
   address: {
     street: 'Big Town',
     city: 'Cleveland',
     state: 'Ohio',
   },
 };
+
+console.log(
+  person.firstName,
+  person.lastName,
+  person.hobbies[2],
+  person.address.street
+);
