@@ -66,4 +66,6 @@ const {
   address: { state },
 } = person;
 
-console.log(state);
+person.email = 'samwise@gmail.com';
+
+console.log(person);
