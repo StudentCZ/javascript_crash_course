@@ -138,7 +138,7 @@
 // }
 
 const x = 4;
-const y = 10;
+const y = 12;
 
 if (x > 5 || y > 10) {
   console.log('x is > 5 and y is > 10');
