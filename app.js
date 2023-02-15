@@ -164,8 +164,14 @@
 //     console.log('it is a different color');
 // }
 
-function addNums(num1 = 5, num2 = 5) {
-  return num1 + num2;
-}
+// function addNums(num1 = 5, num2 = 5) {
+//   return num1 + num2;
+// }
 
-console.log(addNums(1, 2));
+// console.log(addNums(1, 2));
+
+const addNums = (num1, num2) => {
+  return num1 + num2;
+};
+
+console.log(addNums(3, 4));
