@@ -151,4 +151,15 @@
 const num = 12;
 const color = num > 10 ? 'red' : 'blue';
 
-console.log(color);
+//switch
+
+switch (color) {
+  case 'red':
+    console.log('color is red');
+    break;
+  case 'blue':
+    console.log('color is blue');
+    break;
+  default:
+    console.log('it is a different color');
+}
