@@ -137,11 +137,18 @@
 //   console.log('number is less than 10');
 // }
 
-const x = 4;
-const y = 12;
+// const x = 4;
+// const y = 12;
 
-if (x > 5 || y > 10) {
-  console.log('x is > 5 and y is > 10');
-} else {
-  console.log('x is not greater than 5 and y is not greater than 10');
-}
+// if (x > 5 || y > 10) {
+//   console.log('x is > 5 and y is > 10');
+// } else {
+//   console.log('x is not greater than 5 and y is not greater than 10');
+// }
+
+//ternary
+
+const num = 12;
+const color = num > 10 ? 'red' : 'blue';
+
+console.log(color);
