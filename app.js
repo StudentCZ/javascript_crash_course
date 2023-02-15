@@ -148,18 +148,24 @@
 
 //ternary
 
-const num = 12;
-const color = num > 10 ? 'red' : 'blue';
+// const num = 12;
+// const color = num > 10 ? 'red' : 'blue';
 
 //switch
 
-switch (color) {
-  case 'red':
-    console.log('color is red');
-    break;
-  case 'blue':
-    console.log('color is blue');
-    break;
-  default:
-    console.log('it is a different color');
+// switch (color) {
+//   case 'red':
+//     console.log('color is red');
+//     break;
+//   case 'blue':
+//     console.log('color is blue');
+//     break;
+//   default:
+//     console.log('it is a different color');
+// }
+
+function addNums(num1 = 5, num2 = 5) {
+  return num1 + num2;
 }
+
+console.log(addNums(1, 2));
