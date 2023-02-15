@@ -170,8 +170,10 @@
 
 // console.log(addNums(1, 2));
 
-const addNums = (num1, num2) => {
-  return num1 + num2;
-};
+// const addNums = (num1, num2) => {
+//   return num1 + num2;
+// };
 
-console.log(addNums(3, 4));
+// console.log(addNums(3, 4));
+
+//OOP Javascript
