@@ -215,20 +215,22 @@
 
 //ES6 OOP
 
-class Person {
-  constructor(firstName, lastName, dob) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = new Date(dob);
-  }
-  getBirthYear() {
-    return this.dob.getFullYear();
-  }
-  getCurrentAge() {
-    return new Date().getFullYear() - this.getBirthYear();
-  }
-}
+// class Person {
+//   constructor(firstName, lastName, dob) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
+//   }
+//   getBirthYear() {
+//     return this.dob.getFullYear();
+//   }
+//   getCurrentAge() {
+//     return new Date().getFullYear() - this.getBirthYear();
+//   }
+// }
 
-const person1 = new Person('sam', 'wise', '3-3-1990');
+// const person1 = new Person('sam', 'wise', '3-3-1990');
 
-console.log(person1.getCurrentAge());
+// console.log(person1.getCurrentAge());
+
+//DOM
