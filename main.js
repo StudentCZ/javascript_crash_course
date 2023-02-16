@@ -9,3 +9,6 @@ const form = document.getElementById('my-form');
 // const items = document.querySelectorAll('.item');
 
 // items.forEach((item) => console.log(item));
+
+// const ul = document.querySelector('.items');
+// ul.lastElementChild.remove();
