@@ -177,3 +177,12 @@
 // console.log(addNums(3, 4));
 
 //OOP Javascript
+
+function Person(firstName, lastName, dob) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = dob;
+}
+
+const person1 = new Person('sam', 'wise', '3-3-1980');
+console.log(person1);
