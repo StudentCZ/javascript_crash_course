@@ -196,18 +196,39 @@
 // const person1 = new Person('sam', 'wise', '3-3-1988');
 // console.log(person1.getCurrentAge());
 
-function Person(firstName, lastName, dob) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.dob = new Date(dob);
-  Person.prototype.getBirthYear = function () {
+//ES5
+// function Person(firstName, lastName, dob) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.dob = new Date(dob);
+//   Person.prototype.getBirthYear = function () {
+//     return this.dob.getFullYear();
+//   };
+//   Person.prototype.getCurrentAge = function () {
+//     return new Date().getFullYear() - this.getBirthYear();
+//   };
+// }
+
+// const person1 = new Person('sam', 'wise', '3-3-1974');
+
+// console.log(person1.getCurrentAge());
+
+//ES6 OOP
+
+class Person {
+  constructor(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+  }
+  getBirthYear() {
     return this.dob.getFullYear();
-  };
-  Person.prototype.getCurrentAge = function () {
+  }
+  getCurrentAge() {
     return new Date().getFullYear() - this.getBirthYear();
-  };
+  }
 }
 
-const person1 = new Person('sam', 'wise', '3-3-1974');
+const person1 = new Person('sam', 'wise', '3-3-1990');
 
 console.log(person1.getCurrentAge());
