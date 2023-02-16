@@ -10,5 +10,7 @@ const form = document.getElementById('my-form');
 
 // items.forEach((item) => console.log(item));
 
-// const ul = document.querySelector('.items');
+const ul = document.querySelector('.items');
 // ul.lastElementChild.remove();
+
+ul.firstElementChild.textContent = 'How Are You?';
