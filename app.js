@@ -179,19 +179,35 @@
 //OOP Javascript
 
 //constructor function
+// function Person(firstName, lastName, dob) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.dob = new Date(dob);
+//   this.getBirthYear = function () {
+//     return this.dob.getFullYear();
+//   };
+//   this.getCurrentAge = function () {
+//     let Year = new Date().getFullYear();
+//     return Year - this.getBirthYear();
+//   };
+// }
+
+//instantiate object
+// const person1 = new Person('sam', 'wise', '3-3-1988');
+// console.log(person1.getCurrentAge());
+
 function Person(firstName, lastName, dob) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.dob = new Date(dob);
-  this.getBirthYear = function () {
+  Person.prototype.getBirthYear = function () {
     return this.dob.getFullYear();
   };
-  this.getCurrentAge = function () {
-    let Year = new Date().getFullYear();
-    return Year - this.getBirthYear();
+  Person.prototype.getCurrentAge = function () {
+    return new Date().getFullYear() - this.getBirthYear();
   };
 }
 
-//instantiate object
-const person1 = new Person('sam', 'wise', '3-3-1982');
+const person1 = new Person('sam', 'wise', '3-3-1974');
+
 console.log(person1.getCurrentAge());
