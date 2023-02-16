@@ -48,6 +48,12 @@ function onSubmit(e) {
       msg.remove();
     }, 3000);
   } else {
-    console.log('submit successfuly');
+    const li = document.createElement('li');
+    li.appendChild(
+      document.createTextNode(`${nameInput.value} : ${emailInput.value}`)
+    );
+    userList.appendChild(li);
+    nameInput.value = '';
+    emailInput.value = '';
   }
 }
