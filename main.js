@@ -1,4 +1,4 @@
 // Single Element
-document.getElementById();
+const form = document.getElementById('my-form');
 
 //Multiple Element
