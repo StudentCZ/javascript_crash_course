@@ -21,10 +21,33 @@ const form = document.getElementById('my-form');
 // const btn = document.querySelector('.btn');
 // btn.style.background = 'blue';
 
-const btn = document.querySelector('.btn');
-btn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const currentColor = document.body.style.backgroundColor;
+// const btn = document.querySelector('.btn');
+// btn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   const currentColor = document.body.style.backgroundColor;
 
-  document.body.style.backgroundColor = currentColor === 'red' ? 'blue' : 'red';
-});
+//   document.body.style.backgroundColor = currentColor === 'red' ? 'blue' : 'red';
+// });
+
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e) {
+  e.preventDefault();
+
+  if (nameInput.value === '' || emailInput.value === '') {
+    msg.classList.add('error');
+    msg.innerHTML = '<h1>Please Enter All Fields</h1>';
+
+    setTimeout(() => {
+      msg.remove();
+    }, 3000);
+  } else {
+    console.log('submit successfuly');
+  }
+}
