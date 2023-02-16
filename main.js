@@ -18,5 +18,13 @@ const form = document.getElementById('my-form');
 // ul.children[1].innerText = 'Fine';
 // ul.lastElementChild.innerHTML = '<h1>WE ARE ONE PIECE</h1>';
 
+// const btn = document.querySelector('.btn');
+// btn.style.background = 'blue';
+
 const btn = document.querySelector('.btn');
-btn.style.background = 'blue';
+btn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const currentColor = document.body.style.backgroundColor;
+
+  document.body.style.backgroundColor = currentColor === 'red' ? 'blue' : 'red';
+});
